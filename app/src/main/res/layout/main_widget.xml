@@ -1,0 +1,13 @@
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/widget_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_round"
+    android:elevation="8dp"
+    android:padding="10dp"
+    android:shadowDy="2dp"
+    android:text="R">
+
+</Button>
+
