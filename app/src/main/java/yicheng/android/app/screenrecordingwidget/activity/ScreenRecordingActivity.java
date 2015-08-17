@@ -30,6 +30,8 @@ public class ScreenRecordingActivity extends Activity {
     private static final int REQUEST_CODE = 1;
     private MediaProjectionManager mMediaProjectionManager;
     public static ScreenRecorder mRecorder;
+    public static Activity activity;
+
 
     private SharedPreferences local_user_information;
     private SharedPreferences.Editor local_user_editor;
@@ -39,6 +41,8 @@ public class ScreenRecordingActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        activity = this;
+
 
         mMediaProjectionManager = (MediaProjectionManager) getSystemService(MEDIA_PROJECTION_SERVICE);
 

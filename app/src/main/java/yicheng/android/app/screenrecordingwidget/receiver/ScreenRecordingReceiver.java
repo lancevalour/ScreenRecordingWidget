@@ -92,6 +92,7 @@ public class ScreenRecordingReceiver extends BroadcastReceiver {
       /*  Intent captureIntent = mMediaProjectionManager.createScreenCaptureIntent();
         startActivityForResult(captureIntent, REQUEST_CODE);*/
         Intent intent = new Intent(context, ScreenRecordingActivity.class);
+
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                 | Intent.FLAG_ACTIVITY_CLEAR_TOP
                 | Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -102,6 +103,8 @@ public class ScreenRecordingReceiver extends BroadcastReceiver {
         if (ScreenRecordingActivity.mRecorder != null) {
             ScreenRecordingActivity.mRecorder.quit();
             ScreenRecordingActivity.mRecorder = null;
+            ScreenRecordingActivity.activity.finish();
+
         }
     }
 }

@@ -6,7 +6,7 @@
     android:background="@drawable/button_round"
     android:elevation="8dp"
     android:padding="10dp"
-    android:text="R">
+    android:text="Start">
 
 </Button>
 
