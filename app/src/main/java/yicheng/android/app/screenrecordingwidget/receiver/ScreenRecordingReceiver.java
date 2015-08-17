@@ -64,9 +64,9 @@ public class ScreenRecordingReceiver extends BroadcastReceiver {
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.main_widget);
 
         if (isRecording) {
-            views.setTextViewText(R.id.widget_button, "Start Recording");
+            views.setTextViewText(R.id.widget_button, "Start");
         } else {
-            views.setTextViewText(R.id.widget_button, "Stop Recording");
+            views.setTextViewText(R.id.widget_button, "Stop");
         }
 
         AppWidgetManager.getInstance(context).updateAppWidget(

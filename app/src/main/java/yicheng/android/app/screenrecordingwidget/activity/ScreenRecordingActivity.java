@@ -85,7 +85,7 @@ public class ScreenRecordingActivity extends Activity {
                 local_user_editor.commit();
 
                 RemoteViews views = new RemoteViews(getBaseContext().getPackageName(), R.layout.main_widget);
-                views.setTextViewText(R.id.widget_button, "Start Recording");
+                views.setTextViewText(R.id.widget_button, "Start");
 
                 AppWidgetManager.getInstance(getBaseContext()).updateAppWidget(
                         new ComponentName(getBaseContext(), MainWidget.class), views);

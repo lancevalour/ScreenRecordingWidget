@@ -82,7 +82,7 @@ public class MainWidget extends AppWidgetProvider {
                                 int appWidgetId) {
         System.out.println("on update");
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.main_widget);
-        views.setTextViewText(R.id.widget_button, "Start Recording");
+        views.setTextViewText(R.id.widget_button, "Start");
 
         Intent intent = new Intent(context, ScreenRecordingReceiver.class);
 
